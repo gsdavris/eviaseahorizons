@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import axios from 'axios';
 import { Switch, Label, Field } from '@headlessui/react';
 import Loading from '../contentUI/Loading';
@@ -223,11 +224,11 @@ export default function Contact() {
 					</div>
 					<Label className='text-sm leading-6 text-gray-600'>
 						Συμφωνώ με την{' '}
-						<a
-							href='/politiki-aporritou'
+						<Link
+							href='/politiki-aporritoy'
 							className='font-semibold text-primary hover:text-secondary'>
 							Πολιτική&nbsp;Απορρήτου
-						</a>
+						</Link>
 						.
 					</Label>
 				</Field>
