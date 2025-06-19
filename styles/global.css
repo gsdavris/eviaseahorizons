@@ -62,6 +62,17 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+html,
+body {
+	overflow-x: hidden;
+	position: relative;
+}
+
+#container-wrapper {
+	overflow-x: hidden;
+	position: relative;
+}
+
 @keyframes marquee {
 	0% {
 		transform: translateX(0);
