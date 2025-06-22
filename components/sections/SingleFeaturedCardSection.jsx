@@ -38,42 +38,18 @@ export default function SingleFeaturedCardSection({ item, mode = 'dark' }) {
 							className={`mt-8 grid grid-cols-1 gap-4 text-sm leading-6 ${
 								mode === 'light' ? 'text-gray-600' : 'text-gray-300'
 							} sm:grid-cols-2 sm:gap-6`}>
-							{item?.features?.nodes.length <= 4
-								? item?.features?.nodes.map((feature) => (
-										<li
-											key={feature?.id}
-											className='flex gap-x-3'>
-											<FaCheck
-												className='h-6 w-5 flex-none text-indigo-600'
-												aria-hidden='true'
-											/>
-											{feature?.name}
-										</li>
-								  ))
-								: item?.features?.nodes.slice(0, 4).map((feature) => (
-										<li
-											key={feature?.id}
-											className='flex gap-x-3'>
-											<FaCheck
-												className={`h-6 w-5 flex-none ${
-													mode === 'light'
-														? 'text-indigo-600'
-														: 'text-indigo-300'
-												}`}
-												aria-hidden='true'
-											/>
-											{feature?.name}
-										</li>
-								  ))}
+							{item?.features?.nodes.map((feature) => (
+								<li
+									key={feature?.id}
+									className='flex gap-x-3'>
+									<FaCheck
+										className='h-6 w-5 flex-none text-indigo-600'
+										aria-hidden='true'
+									/>
+									{feature?.name}
+								</li>
+							))}
 						</ul>
-						{item?.features?.nodes.length > 4 && (
-							<h4
-								className={`flex-none text-sm pt-4 font-semibold leading-6 ${
-									mode === 'light' ? 'text-indigo-600' : 'text-indigo-300'
-								}`}>
-								και πολλά ακόμα...
-							</h4>
-						)}
 					</div>
 					<div className='-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0'>
 						<div className='relative rounded-2xl bg-gray-100 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:h-full lg:flex-col lg:justify-center'>
