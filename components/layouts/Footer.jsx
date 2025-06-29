@@ -73,7 +73,7 @@ const Footer = ({ mode = 'light', menus, companyDetails, companySocials }) => {
 									))}
 								<div className='w-full md:w-4/12 px-4 ml-auto'>
 									<div className='py-4'>
-										<ContactButton />
+										<ContactButton label='Κράτηση' />
 									</div>
 								</div>
 							</div>
