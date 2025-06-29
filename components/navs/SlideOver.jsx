@@ -90,7 +90,7 @@ const SlideOver = ({
 														<MobileMenu menus={menus} />
 													</div>
 													<div className='py-6'>
-														<ContactButton />
+														<ContactButton label='Κράτηση' />
 													</div>
 													<div className='py-6'>
 														<SocialMenu
