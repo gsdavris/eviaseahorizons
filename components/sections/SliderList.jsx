@@ -6,7 +6,7 @@ export default function SliderList({ data }) {
 		<section
 			className={data?.mode === 'light' ? 'bg-gray-100' : 'bg-background'}>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
-				<div className='mx-auto max-w-2xl py-16 sm:py-20 lg:max-w-none lg:py-32'>
+				<div className='mx-auto max-w-2xl py-16 sm:py-20 lg:max-w-none'>
 					<h2
 						className={`text-3xl sm:text-4xl font-bold tracking-tight ${
 							data?.mode === 'light' ? 'text-primary' : 'text-secondary'

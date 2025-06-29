@@ -12,11 +12,11 @@ const Images2WText = ({ data }) => {
 				className={`relative ${
 					data?.mode === 'light' ? 'bg-light-background-alt' : 'bg-background'
 				}`}>
-				<div className='px-6 lg:px-8 mx-auto max-w-7xl lg:flex lg:flex-wrap relative lg:-translate-y-32'>
+				<div className='px-6 lg:px-8 pt-16 md:pt-0 mx-auto max-w-7xl lg:flex lg:flex-wrap relative'>
 					<div className='lg:w-1/12'></div>
 					<div className='lg:w-11/12 lg:mb-16'>
 						<Banner
-							minHeight='min-h-[600px]'
+							minHeight='min-h-[500px]'
 							imageUrl={data.image?.sourceUrl}
 							alt={data.image?.altText}
 							overlayOpacity='50'
@@ -25,7 +25,7 @@ const Images2WText = ({ data }) => {
 					<div className='mb-4 relative lg:hidden mx-auto -mt-[100px] w-10/12 z-10'>
 						<div className='overflow-hidden relative'>
 							<Banner
-								minHeight='min-h-[600px]'
+								minHeight='min-h-[400px]'
 								imageUrl={data.image1?.sourceUrl}
 								alt={data.image1?.altText}
 								overlayOpacity='50'
@@ -73,7 +73,7 @@ const Images2WText = ({ data }) => {
 						} w-4/12 z-10`}>
 						<div className='overflow-hidden relative'>
 							<Banner
-								minHeight='min-h-[600px]'
+								minHeight='min-h-[400px]'
 								imageUrl={data.image1?.sourceUrl}
 								alt={data.image1?.altText}
 								overlayOpacity='50'

@@ -17,7 +17,7 @@ const FooterMenu = ({ title, navigation, mode }) => {
 								mode === 'light'
 									? 'text-gray-500 hover:text-gray-800'
 									: 'text-gray-400 hover:text-gray-100'
-							} font-semibold block pb-2 text-sm`}
+							} font-semibold block pb-4 text-sm`}
 							href={item.uri}>
 							{item.label}
 						</Link>

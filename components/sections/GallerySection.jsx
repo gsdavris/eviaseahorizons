@@ -32,8 +32,13 @@ const GallerySection = ({ images = imagesArray, data }) => {
 		items = data.items;
 	}
 
+	const { mode, title } = data;
+
 	return (
-		<section className='overflow-hidden bg-light-background-alt py-8'>
+		<section
+			className={`overflow-hidden ${
+				mode === 'light' ? 'bg-light-background-alt' : 'bg-gray-900'
+			} py-8`}>
 			<div className='mx-auto max-w-7xl px-6 lg:px-8'>
 				<div className='relative columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4'>
 					{items
