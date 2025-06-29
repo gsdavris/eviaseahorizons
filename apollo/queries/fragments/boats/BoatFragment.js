@@ -1,6 +1,7 @@
 const BoatFragment = `
     id
     excerpt
+    content
     featuredImage {
         node {
         altText

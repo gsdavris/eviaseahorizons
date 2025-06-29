@@ -8,6 +8,7 @@ import Overlay from "@/components/contentUI/Overlay";
 import InfoText from "@/components/contentUI/InfoText";
 import GallerySection from "@/components/sections/GallerySection";
 import SingleFeaturedCardSection from "@/components/sections/SingleFeaturedCardSection";
+import BoatFeaturesSection from "@/components/sections/BoatFeaturesSection";
 
 export default function BoatPage ({ data }) {
     const { boat } = data;
@@ -29,6 +30,7 @@ export default function BoatPage ({ data }) {
                 </div>
             </section>
             <SingleFeaturedCardSection item={ boat } />
+            <BoatFeaturesSection data={ boat } />
             <GallerySection data={ { items: boat?.details?.gallery } } />
             <PageContent content={ boat?.pageContent } />
         </Layout>

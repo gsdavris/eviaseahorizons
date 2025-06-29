@@ -33,3 +33,35 @@ export function transformMenu (response) {
 
     return result;
 }
+
+export function parseWpTableToArray (content) {
+    if (!content || typeof content !== 'string') return null;
+
+    try {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(content, 'text/html');
+        const table = doc.querySelector('table');
+
+        if (!table) return null;
+
+        const rows = table.querySelectorAll('tr');
+        if (!rows.length) return null;
+
+        const features = [];
+
+        rows.forEach((row) => {
+            const cells = row.querySelectorAll('td');
+            if (cells.length === 2) {
+                const key = cells[0].textContent.trim();
+                const value = cells[1].textContent.trim();
+                features.push({ key, value });
+            }
+        });
+
+        return features.length ? features : null;
+    } catch {
+        return null;
+    }
+}
+
+
