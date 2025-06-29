@@ -78,7 +78,7 @@ export default function Navbar({
 				/>
 			</div>
 			<div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-				<ContactButton label='Επικοινωνία' />
+				<ContactButton label='Κράτηση' />
 			</div>
 		</nav>
 	);
