@@ -29,7 +29,7 @@ export default function SingleFeaturedCardSection({ item, mode = 'dark' }) {
 								className={`flex-none text-sm font-semibold leading-6 ${
 									mode === 'light' ? 'text-indigo-600' : 'text-indigo-300'
 								}`}>
-								Features
+								Περιλαμβάνονται
 							</h4>
 							<div className='h-px flex-auto bg-gray-100' />
 						</div>
