@@ -16,8 +16,8 @@ const features = [
 				επικοινωνία, θα σας καλέσουμε άμεσα. Ή καλέστε μας στο{' '}
 				<a
 					className='font-semibold text-primary hover:text-secondary'
-					href='tel:+306947430994'>
-					6947 430 994
+					href='tel:+306945963502'>
+					6945 963 502
 				</a>
 				.
 			</dd>
