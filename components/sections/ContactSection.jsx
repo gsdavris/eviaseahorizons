@@ -18,6 +18,12 @@ const features = [
 					className='font-semibold text-primary hover:text-secondary'
 					href='tel:+306945963502'>
 					6945 963 502
+				</a>{' '}
+				ή στο{' '}
+				<a
+					className='font-semibold text-primary hover:text-secondary'
+					href='tel:+306970019329'>
+					6970 019 329
 				</a>
 				.
 			</dd>
