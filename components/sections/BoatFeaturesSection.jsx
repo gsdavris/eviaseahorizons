@@ -1,8 +1,6 @@
 import { parseWpTableToArray } from '@/utils/helpers';
 
 export default function BoatFeaturesSection({ data }) {
-	console.log(data);
-
 	const features = parseWpTableToArray(data?.content) || [
 		{ key: 'Origin', value: 'Designed by Good Goods, Inc.' },
 		{

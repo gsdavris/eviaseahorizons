@@ -1,7 +1,6 @@
 export const isVideoFile = (url) => {
     const videoExtensions = ['.mp4', '.webm', '.ogg'];
     return videoExtensions.some((ext) => {
-        console.log(url);
         url?.toLowerCase().endsWith(ext);
     });
 };

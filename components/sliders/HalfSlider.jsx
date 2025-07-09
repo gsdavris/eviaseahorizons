@@ -57,13 +57,7 @@ const HalfSlider = ({
                     --swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.5);
                     --swiper-scrollbar-size: 4px;
                 }`,
-							]}
-							// on={{
-							//   slideChange: () => console.log("slide changed"),
-							//   progress: (s, progress) =>
-							//     console.log(`progress is ${progress}`),
-							// }}
-						>
+							]}>
 							{children}
 						</Slider>
 					</div>
