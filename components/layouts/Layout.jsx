@@ -11,6 +11,9 @@ const Layout = ({ children, data }) => {
 		favicon,
 		page,
 		plan,
+		post,
+		boat,
+		tour,
 		category,
 		companyDetails,
 		companySocials,
@@ -22,6 +25,15 @@ const Layout = ({ children, data }) => {
 	}
 	if (plan) {
 		pageSeo = plan.seo;
+	}
+	if (boat) {
+		pageSeo = boat.seo;
+	}
+	if (tour) {
+		pageSeo = tour.seo;
+	}
+	if (post) {
+		pageSeo = post.seo;
 	}
 	if (category) {
 		pageSeo = category.seo;
