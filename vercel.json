@@ -1,14 +1,14 @@
 {
 	"redirects": [
 		{
-			"source": "/(.*)",
+			"source": "/:path*",
 			"has": [
 				{
 					"type": "host",
 					"value": "eviaseahorizons.gr"
 				}
 			],
-			"destination": "https://www.eviaseahorizons.gr/:1",
+			"destination": "https://www.eviaseahorizons.gr/:path*",
 			"permanent": true
 		}
 	]
