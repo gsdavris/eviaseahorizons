@@ -5,6 +5,8 @@ export const isVideoFile = (url) => {
     });
 };
 
+
+
 export function transformMenu (response) {
     const menuItems = response.menuItems.nodes;
 
